@@ -3,7 +3,25 @@ Example of error in groovy syntax highlight in Asciidoc on GitHub
 
 [source,groovy,title="top of a Groovy file"]
 ----
+import x // <1>
+----
+<1> A callout
+
+[source,groovy,title="With a semicolon it is happy"]
+----
 import x; // <1>
 ----
 <1> A callout
 
+[source,groovy,title="Other possible places an error could happen"]
+----
+package mypackage // <1>
+import a.b.c // <2>
+class MyClass { // <3>
+  static void main(String[] args) { // <4>
+    println "Hello, World!" // <5>
+  } // <6>
+  def func() { // <7>
+    "Hello, World!" // <8>
+  } // <9>
+----
