@@ -17,6 +17,9 @@ import x; // <1>
 ----
 package mypackage // <1>
 import a.b.c // <2>
+
+// trailing space
+import d.e.f 
 class MyClass { // <3>
   static void main(String[] args) { // <4>
     println "Hello, World!" // <5>
