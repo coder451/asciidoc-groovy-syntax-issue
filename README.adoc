@@ -18,8 +18,10 @@ import x; // <1>
 package mypackage // <1>
 import a.b.c // <2>
 
-// trailing space
+// trailing space - no problem
 import d.e.f 
+// Trailing comment
+import g.h.i // a comment
 class MyClass { // <3>
   static void main(String[] args) { // <4>
     println "Hello, World!" // <5>
