@@ -28,3 +28,7 @@ class MyClass { // <3>
     "Hello, World!" // <8>
   } // <9>
 ----
+
+[source,groovy,title="More spaces give more red"]
+----
+import a.b.c        // <1>
