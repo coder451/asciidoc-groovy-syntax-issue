@@ -1,4 +1,5 @@
 = asciidoc-groovy-syntax-issue
+
 Example of error in groovy syntax highlight in Asciidoc on GitHub
 
 [source,groovy,title="top of a Groovy file"]
@@ -24,11 +25,13 @@ import d.e.f
 // Trailing comment - not OK
 import g.h.i // a comment
 
-// Split across two  lines, with trailing space
+// Split across two  lines, with trailing space - unexpected error highlight; the error is the newline
 import
    j.k.l  // comment
 import
    m.n.o; // comment
+
+// Everywhere else seems fine with trailing comments
 class MyClass { // <3>
   static void main(String[] args) { // <4>
     println "Hello, World!" // <5>
@@ -40,4 +43,4 @@ class MyClass { // <3>
 
 [source,groovy,title="More spaces give more red"]
 ----
-import a.b.c        // <1>
+import a.b.c        // comment
