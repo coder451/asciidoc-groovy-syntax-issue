@@ -4,6 +4,13 @@ Example of error in groovy syntax highlight in Asciidoc on GitHub
 
 [source,groovy,title="top of a Groovy file"]
 ----
+package x.y 
+import a.b.MyClass // comment
+----
+
+
+[source,groovy,title="top of a Groovy file"]
+----
 import x // <1>
 ----
 <1> A callout
